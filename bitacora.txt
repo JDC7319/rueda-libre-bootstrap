@@ -459,3 +459,42 @@ bg : background jaja, el fondo del contenedor, en mi caso utilice bg-* y tambien
 Tambien fui hiciendo pruebas con los distintos tamaños predefinidos 0-5, con su respectivo padding p o gutters g (espacio entre filas y columnas)
 
 miniReto7 dia 2 11/2/2026
+
+/ Inciso / 
+Para este minireto me ayude de la ia para:
+-Revisar conflictos e ir aprendiendo a usar las devtools ya quetuve algunos problemas al leer los conflictos que seguian apareciendo, despues de la ayuda entendi bien como revisar que esta afectando cada cosa-Me ayudo a entender que tenia mi pagina leyendo primero mis estilos y luego los de bootstrap cuando deberia ser al revez,-
+
+-Entender mejor la organizacion de los elementos, antes no tenia divs para los articles, luego de revisar buenas practicas con la IA revise que tenia secciones como en los articles en los que podia poner un div para aplicar las clases de bootstrap y definir su comportamiento con los breakpoints predefinidos. 
+
+Conflicto 1 Jerarquia
+Mi body y el de bootstrap tenian la misma especificidad, dado este caso gana el que se lee de ultimo en el codigo HTML, mi error era que estaba leyendo de ultimo los estilos de bootstrap por ende no aplicaban las fuentes y demas funciones, se corrigio poniendo el enlace de mi css al final para que ganara en especificidad.
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="css/styles.css">
+
+Algo asi
+
+
+
+Conflicto 2 Distribución del Layout y Clases de Contenedores
+
+ Las clases de diseño y posicionamiento  creadas inicialmente en styles.css, borre varias lineas que chocaban con el sistema flexible de filas y columnas nativo de Bootstrap, como de la seccion flota y servicios, o el hero(portada) y el header. 
+
+
+
+Conflicto 3: La config para que tome en cuenta los bordes y el tamaño sea siempre el mismo
+
+*, *::before, *::after {
+    box-sizing: border-box;
+} 
+
+ Ya Bootstrap la utilazaba por defecto entonces pude remover la mia 
+
+
+
+
+
+
+

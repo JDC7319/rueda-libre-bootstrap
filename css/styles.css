@@ -12,65 +12,21 @@
     --espacio-grande: 2rem;
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
-}
 
 body {
-    
     margin: 0;
-    font-family: var(--fuente-secundaria);
+    font-family: var(--fuente-secundaria); 
     color: var(--color-principal);
     background-color: var(--color-texto);
     line-height: 1.6;
 }
 
 /* Portada y Encabezado Principal */
-header.portada {
-    background-color: var(--color-principal);
-    color: var(--color-secundario);
-    min-height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: var(--espacio-mediano);
-}
 
 
-.barra-superior {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--espacio-mediano);
-}
 
-.barra-superior .logo {
-    color: var(--color-secundario);
-    font-family: var(--fuente-principal);
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: var(--espacio-pequeno);
-}
 
-.titulo-portada {
-    text-align: center;
-    margin: var(--espacio-mediano) 0;
-    font-size: 1.8rem;
-}
 
-.logo {
-    width: 100%;
-    text-align: center;
-}
-
-.logo img {
-    width: 40px;
-    border-radius: 15px;
-}
 
 /* Titulos */
 h1, h2, h3 {
@@ -139,50 +95,7 @@ header nav ul,
     color: var(--color-secundario);
 }   
 
-/* Nuestra Flota */
-.flota-container {
-    margin-top: var(--espacio-grande);
-    padding-inline: var(--espacio-mediano);
-}
 
-.flota-container h2 {
-    text-align: center;
-    margin: var(--espacio-grande) 0;
-}
-
-.flota-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--espacio-grande);
-}
-
-.flota-container .tarjeta-destacada {
-    padding: var(--espacio-mediano);
-    border: 1px solid var(--botones-enlaces-titulos-encabezados);
-    border-radius: 8px;
-    background-color: var(--color-principal);
-    color: var(--color-secundario);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.flota-container .tarjeta-destacada img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-block: var(--espacio-mediano);
-}
-
-.flota-container .tarjeta-destacada .btn-cta {
-    text-align: center;
-    margin-top: auto;
-}
-
-.flota-container .tarjeta-destacada .btn-cta:hover {
-    background-color: var(--color-principal);
-    color: var(--color-secundario);
-}
 
 /* Inputs Pseudoclases*/
 input:focus, select:focus, textarea:focus {
@@ -202,21 +115,7 @@ main {
 }
 
 /* Servicios y Tarjetas */
-#servicios {
-    margin-top: var(--espacio-mediano);
-    padding-inline: var(--espacio-mediano);
-}
 
-#servicios h2 {
-    text-align: center;
-    margin-bottom: var(--espacio-grande);
-}
-
-#servicios .tarjetas-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--espacio-grande);
-}
 
 #servicios article {
     padding: var(--espacio-mediano);
@@ -422,82 +321,4 @@ footer a:hover {
     gap: var(--espacio-grande);
 }
 
-/* Media Queries Tablet*/
-@media (min-width: 768px) {
-    header.portada {
-        min-height: 20dvh;
-        padding: var(--espacio-grande);
-    }
 
-    .barra-superior {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .barra-superior .logo {
-        width: auto;
-        text-align: left;
-    }
-
-    #menu,
-    header nav ul, 
-    .menu-navegacion {
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        gap: var(--espacio-mediano);
-    }
-
-    .titulo-portada {
-        font-size: 2.2rem;
-        margin: auto 0;
-    }
-
-    .flota-grid,
-    #servicios .tarjetas-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    form {
-        max-width: 45rem;
-    }
-
-    .footer-container {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-    }
-}
-
-/* Media Queries Escritorio*/
-@media (min-width: 1200px) {
-    header.portada {
-        min-height: 20dvh;
-    }
-
-    .barra-superior {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #menu,
-    header nav ul, 
-    .menu-navegacion {
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    .flota-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    #servicios .tarjetas-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    form {
-        max-width: 50rem;
-    }
-}
