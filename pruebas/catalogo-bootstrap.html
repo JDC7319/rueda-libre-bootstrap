@@ -9,17 +9,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-
-    <header>
-        <!-- Encabezado del paso 13  -->
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+            <a class="text-white fw-bold text-decoration-none" href="../index.html">Rueda Libre</a>
+            <nav aria-label="Secciones de la página">
+                <ul class="d-flex flex-wrap justify-content-center gap-3 list-unstyled m-0">
+                    <li><a class="text-white text-decoration-none" href="#catalogo">Experiencias</a></li>
+                    <li><a class="text-white text-decoration-none" href="#beneficios">Beneficios</a></li>
+                    <li><a class="text-white text-decoration-none" href="#consulta">Consulta</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main id="contenido" class="container py-5">
         <h1 class="mb-4" >Ideas para tu proxima salida</h1>
         <!-- Portada Paso 12 HERE -->
+        
+        <section class="row g-4 align-items-center mb-5" aria-labelledby="portada-titulo">
+            <div class="col-12 col-md-6">
+                <h2 id="portada-titulo">Encuentra tu próximo plan</h2>
+                <p class="lead">Ciudad, caminos y nuevas formas de disfrutar la bicicleta.</p>
+                <a href="#catalogo" class="d-inline-block p-2 bg-warning text-dark rounded text-decoration-none">Ver experiencias</a>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="../img/gravel.jpg" class="img-fluid rounded-3" loading="lazy" alt="Ciclista recorriendo un camino de grava entre campos">
+            </div>
+        </section>
 
         <!-- Sección de catálogo -->
         <section id="catalogo" class="container mb-5" aria-labelledby="catalogo-title"> 
-            <h2 id="catalogo-title" class="mb-4">Elige una experiencia<h2>
+            <h2 id="catalogo-title" class="mb-4">Elige una experiencia</h2>
             <div class="row g-4" >
                 <!-- Contenedor de la columna (Grilla)-->
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
@@ -115,8 +134,8 @@
         <!-- Beneficios, llamada a la accion, tabla y consulta. -->
         <section id=beneficios class="container py-5 " aria-labelledby="beneficios-title">
             <h2 id="beneficios-title" class="text-center fw-bold">¿Por qué Rueda Libre?</h2>
-            <div class="row g-4 ">
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 ">
+            <div class="row g-4 mt-4">
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="p-4 h-100 border rounded-4 shadow-sm bg-white d-flex flex-column justify-content-between">
                         <div>
                             <h3 class="fs-5 fw-bold">Bicicletas Revisadas</h3>
@@ -175,9 +194,12 @@
             </div>
 </section>    
     </main>
-    <footer>
-        <!-- Footer Paso 13 HERE -->
-    </footer>
+    <footer class="border-top py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+            <p class="mb-0">Rueda Libre · Ideas para rodar</p>
+            <a href="#contenido">Volver al contenido</a>
+        </div>
+</footer>
     
     <!-- CDN Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

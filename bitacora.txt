@@ -454,3 +454,8 @@ shadow : Sombra del contenedor, en este caso utilizamos las medidas sm,md,lg, et
 d-flex flex-*: d as display, me permite usar flexbox en mis contenedores y definir si va a ser fila o columna / rows or columns
 
 bg : background jaja, el fondo del contenedor, en mi caso utilice bg-* y tambien bg-warning para darle un estilo al boton de consultar opciones
+
+
+Tambien fui hiciendo pruebas con los distintos tamaños predefinidos 0-5, con su respectivo padding p o gutters g (espacio entre filas y columnas)
+
+miniReto7 dia 2 11/2/2026
