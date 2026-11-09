@@ -13,6 +13,24 @@
 }
 
 
+.navbar {
+    background-color: var(--color-principal);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: var(--color-secundario);
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+    color: var(--botones-enlaces-titulos-encabezados);
+}
+
+.navbar .navbar-toggler {
+    border-color: var(--color-secundario);
+}
+
 body {
     margin: 0;
     font-family: var(--fuente-secundaria); 
@@ -317,8 +335,37 @@ footer a:hover {
 
 .footer-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: var(--espacio-grande);
+    width: 100%;
+}
+
+.footer-bloque {
+    flex: 0 1 auto;
+}
+
+.footer-bloque a {
+    display: block;
+}
+
+@media (max-width: 767.98px) {
+    .footer-container {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        min-height: 19rem;
+        gap: var(--espacio-mediano);
+    }
+
+    .footer-bloque {
+        width: 100%;
+    }
+}
+
+#encuentranos {
+    scroll-margin-top: 1.5rem;
 }
 
 
