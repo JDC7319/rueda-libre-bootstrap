@@ -16,39 +16,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
+    <!-- CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/styles.css">
+
+    
 </head>
 <body>
-    <header class="portada">
-        <div class="barra-superior">
-            <a href="../index.html" class="logo">
-                <img src="../img/logo.avif" alt="Logo"> Rueda Libre
-            </a>
-
-            
-            <nav>
-            <ul id="menu">
-            <li><a href="../index.html" >Inicio</a></li>
-            <li><a href="../#quienes-somos">Quienes Somos</a></li>
-            <li><a href="../#servicios"> Nuestros Servicios</a></li>
-            <li><a href="../#como-alquilar">¿Cómo alquilar?</a></li>
-            <li><a href="./tarifas.html" class="active">Tarifas y Rutas</a></li>
-            <li><a href="./reservas.html">Reservas</a></li>
-            <li><a href="../#encuentranos">Encuéntranos</a></li>
-            </ul>
+    <header class="sticky-top shadow-sm">
         
-            </nav>
-        </div>
-    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="../index.html" class="navbar-brand fw-bold">
+                <img src="../img/logo.avif" alt="logo" width="70" height="70" class="rounded-4"> Rueda Libre
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                    <ul class="navbar-nav align-items-lg-center gap-3">
+                        <li class="nav-item"><a href="../index.html" class="nav-link active text-decoration-none">Inicio</a></li>
+                        <li class="nav-item"><a href="./tarifas.html" class="nav-link text-decoration-none">Tarifas y Rutas</a></li>
+                        <li class="nav-item"><a href="./reservas.html" class="nav-link text-decoration-none">Reservas</a></li>
+                        <li class="nav-item"><a href="#encuentranos" class="btn btn-outline-secondary btn-sm px-3 text-decoration-none">Encuéntranos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-<<<<<<< HEAD
-        <h2>Tarifas y Rutas</h2>
-        <section id="tarifas" class="tarifas-table">
-=======
         <h1>Tarifas y Rutas</h1>
-        <section id="tarifas">
->>>>>>> ed11310e0b963472f8f590a2723e03646c6104f3
+        <section id="tarifas" class="tarifas-table">
             <table border="1" >
             <caption>Alquiler</caption>
             <thead>
@@ -156,4 +156,8 @@
     <a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer" class="whatsapp-flotante">
     WhatsApp
     </a>
+
+    <!-- CDN Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
+</html>
