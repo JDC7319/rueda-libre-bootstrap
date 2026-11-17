@@ -11,18 +11,7 @@ HTML: Es la estructura básica y el contenido del sitio por ejemplo para crear l
 CSS: Es el diseño visual, el estilo y la estetica. Por ejemplo para darle un estilo llamativo a los botones para logearse.
 JavaScript: Es la interactividad y el comportamiento dinamico. Por ej hacer que cuando alguien haga clic en el boton de comprar, aparezca un mensaje de confirmacion en la pantalla sin recargar la pagina.
 
-Matriz Rutas del Proyecto +
 
-Archivo de Origen → Destino → Ruta Escrita
-• index.html → index.html → # (o index.html)
-• index.html → tarifas.html → paginas/tarifas.html
-• index.html → reservas.html → paginas/reservas.html
-• paginas/tarifas.html → index.html → ../index.html
-• paginas/tarifas.html → index.html → ../index.html
-• paginas/tarifas.html → reservas.html → reservas.html
-• paginas/reservas.html → tarifas.html → tarifas.html
-• paginas/reservas.html → index.html → ../index.html
-• paginas/reservas.html → tarifas.html → tarifas.html
 
 index***********************************************************************
 ================================================================================
@@ -498,8 +487,3 @@ Conflicto 3: La config para que tome en cuenta los bordes y el tamaño sea siemp
 
 
 
-
-
-Tambien fui hiciendo pruebas con los distintos tamaños predefinidos 0-5, con su respectivo padding p o gutters g (espacio entre filas y columnas)
-
-miniReto7 dia 2 11/2/2026
